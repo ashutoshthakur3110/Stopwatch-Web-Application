@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-#button{
+#button {
     height: 30px;
     width: 60px;
     position: absolute;
@@ -11,148 +11,66 @@
     border: none;
     border-radius: 10px;
     background-color: #d6d6d6;
-
 }
 
-#stopwatch{
+#stopwatch {
     text-align: center;
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#box{
+#box {
     width: 900px;
     height: 200px;
     background-color: white;
     margin-left: 15rem;
-    margin-top: 6rem;  
+    margin-top: 6rem;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
-    box-shadow:#00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+    box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
 }
 
-#hr1{
-    width: 20px;
-    height: 20px;
-    background-color: #d6d6d6;
-    position: absolute;
-    border-radius: 10px;
-    top: 70px;
-    left: 70px;
-    padding: 35px;
-}
-
-#hr1 h1{
-    font-size: 50p
-}
-
-#hr2{
+#hr1, #hr2, #min1, #min2, #sec1, #sec2 {
     width: 20px;
     height: 20px;
     background-color: #c7c7c7;
-    border-radius: 10px;
     position: absolute;
-    top: 70px;
-    left: 180px;
+    border-radius: 10px;
     padding: 35px;
 }
 
-#min1{
-    width: 20px;
-    height: 20px;
-    background-color: #c7c7c7;
-    border-radius: 10px;
-    position: absolute;
-    top: 70px;
-    left: 340px;
-    padding: 35px;
-}
+#hr1 { top: 70px; left: 70px; }
+#hr2 { top: 70px; left: 180px; }
+#min1 { top: 70px; left: 340px; }
+#min2 { top: 70px; left: 450px; }
+#sec1 { top: 70px; left: 610px; }
+#sec2 { top: 70px; left: 720px; }
 
-#min2{
-    width: 20px;
-    height: 20px;
-    background-color: #c7c7c7;
-    border-radius: 10px;
-    position: absolute;
-    top: 70px;
-    left: 450px;
-    padding: 35px;
-}
-
-#sec1{
-    width: 20px;
-    height: 20px;
-    background-color: #c7c7c7;
-    border-radius: 10px;
-    position: absolute;
-    top: 70px;
-    left: 610px;
-    padding: 35px;
-}
-
-#sec2{
-    width: 20px;
-    height: 20px;
-    background-color: #c7c7c7;
-    border-radius: 10px;
-    position: absolute;
-    top: 70px;
-    left: 720px;
-    padding: 35px;
-}
-#start{
+#start, #stop, #lap, #reset {
     position: absolute;
     top: 25rem;
-    left: 13rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    padding: 15px 40px 15px 40px;
+    padding: 15px 40px;
     border-radius: 25px;
     border: none;
     background-color: #fff;
     color: rgb(141, 140, 140);
 }
 
-#stop{
-    position: absolute;
-    top: 25rem;
-    left: 30rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    padding: 15px 40px 15px 40px;
-    border-radius: 25px;
-    border: none;
-    background-color: #fff;
-    color: rgb(141, 140, 140);
+#start { left: 13rem; }
+#stop { left: 30rem; }
+#lap { left: 48rem; }
+#reset { left: 65rem; }
+
+body {
+    background-color: white;
 }
 
-#lap{
-    position: absolute;
-    top: 25rem;
-    left: 48rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    padding: 15px 40px 15px 40px;
-    border-radius: 25px;
-    border: none;
-    background-color: #fff;
-    color: rgb(141, 140, 140);
-}
-
-#reset{
-    position: absolute;
-    top: 25rem;
-    left: 65rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    padding: 15px 40px 15px 40px;
-    border-radius: 25px;
-    border: none;
-    background-color: #fff;
-    color: rgb(141, 140, 140);
-}
-
-body{
-
+#laps {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: x-large;
+    
 }
